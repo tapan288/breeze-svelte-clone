@@ -9,9 +9,13 @@
     });
 
     function submit() {
-        $form.post("/register");
+        $form.post(route("register"));
     }
 </script>
+
+<svelte:head>
+    <title>Register</title>
+</svelte:head>
 
 <div>
     <div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
