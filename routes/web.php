@@ -23,3 +23,5 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+require __DIR__ . '/auth.php';
