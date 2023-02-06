@@ -1,3 +1,7 @@
+<script context="module">
+    export { default as layout } from "../../Layouts/GuestLayout.svelte";
+</script>
+
 <script>
     import { useForm } from "@inertiajs/svelte";
     import SimpleButton from "../../Components/SimpleButton.svelte";
