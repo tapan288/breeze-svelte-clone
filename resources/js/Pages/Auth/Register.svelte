@@ -1,5 +1,5 @@
 <script>
-    import { useForm } from "@inertiajs/svelte";
+    import { Link, useForm } from "@inertiajs/svelte";
     import InputError from "../../Components/InputError.svelte";
 
     let form = useForm({
@@ -112,12 +112,12 @@
 
                     <div class="flex items-center justify-between">
                         <div class="text-sm">
-                            <a
-                                href="/login"
+                            <Link
+                                href={route("login")}
                                 class="font-medium text-indigo-600 hover:text-indigo-500"
                             >
                                 Already Registered?
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
