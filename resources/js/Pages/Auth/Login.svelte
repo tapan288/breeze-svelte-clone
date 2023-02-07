@@ -7,6 +7,7 @@
     let form = useForm({
         email: null,
         password: null,
+        remember: false,
     });
 
     function submit() {
