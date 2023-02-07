@@ -21,6 +21,8 @@
                 </div>
             </div>
             <div class="ml-6 flex items-center">
+                <SimpleButton href={route("profile.edit")}>Profile</SimpleButton
+                >
                 <SimpleButton href={route("logout")} method="post"
                     >Logout</SimpleButton
                 >
