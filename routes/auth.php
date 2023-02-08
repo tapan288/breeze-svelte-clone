@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\PasswordController;
+use App\Http\Controllers\Auth\GithubLoginController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\Auth\RegisteredUserController;
@@ -57,3 +58,7 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
         ->name('logout');
 });
+
+// github login routes
+Route::get('github/login', [GithubLoginController::class, 'redirect'])->name('github.login');
+Route::get('github/authenticate', [GithubLoginController::class, 'authenticate'])->name('github.authenticate');

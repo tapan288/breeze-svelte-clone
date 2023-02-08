@@ -66,7 +66,7 @@
                 <p class="text-sm mt-2 text-gray-800">
                     Your email address is unverified.
                     <Link
-                        :href="route('verification.send')"
+                        href={route("verification.send")}
                         method="post"
                         as="button"
                         class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -76,10 +76,7 @@
                 </p>
 
                 {#if status === "verification-link-sent"}
-                    <div
-                        v-show="props.status === 'verification-link-sent'"
-                        class="mt-2 font-medium text-sm text-green-600"
-                    >
+                    <div class="mt-2 font-medium text-sm text-green-600">
                         A new verification link has been sent to your email
                         address.
                     </div>
